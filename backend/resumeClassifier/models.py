@@ -22,3 +22,5 @@ class Commission(models.Model):
     company = models.CharField(max_length=255)
     hiredNumber = models.IntegerField()
     amount = models.FloatField()
+
+
