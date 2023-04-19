@@ -1,0 +1,60 @@
+.commission-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .commission-agreement {
+    width: 100%;
+    max-width: 800px;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .agreement label input{
+    width: 30px;
+  }
+  .commission-table {
+    width: 100%;
+    max-width: 800px;
+    overflow-x: scroll;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead th {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody td:first-child {
+    font-weight: bold;
+  }
+  
+  tbody td:last-child {
+    text-align: right;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  

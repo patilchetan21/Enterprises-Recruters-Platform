@@ -1,0 +1,58 @@
+.recruitment-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+    height: 100vh;
+    font-size: 25px;
+background-image: url(./emile-perron-xrVDYZRGdw4-unsplash.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+  }
+  .recruitment-page-container .recruitment-page-header{
+    margin-bottom: 100px;
+  }
+  
+  .resume-upload {
+   
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .recruitment-page-container .recruitment-page-header p{
+    font-family: 'Montserrat', sans-serif; /* use a stylish font that's easy to read */
+    font-size: 3rem; /* increase the font size to make it stand out */
+    font-weight: 600; /* make the font bold for emphasis */
+    text-align: center; /* center the text */
+    color: #333; /* choose a legible text color */
+    margin-top: 2rem; /* add some space between the quote and the previous content */
+    line-height: 1.5; /* adjust the line height for better readability */
+    text-shadow: 1px 1px 2px #ccc; /* add a subtle text shadow for depth */
+  }
+  
+  
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #008080;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  

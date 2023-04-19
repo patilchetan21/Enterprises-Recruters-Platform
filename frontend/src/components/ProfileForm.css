@@ -1,0 +1,69 @@
+.cont{
+  background-image: url(./mylene-tremoyet-Da0pdCekeUs-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.profile-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-left: 50px;
+  height: 100vh;
+ 
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  
+  height: 3vh;
+}
+.form-group label{
+  font-size: 10px;
+  height: 6vh;
+ 
+}
+.form-group input{
+  height: 2px;
+  width: 30vw;
+
+}
+label {
+  
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+  }
+  
+  button:hover {
+  background-color: #3e8e41;
+  }
+  .cont .profile-form .but{
+ position: relative;
+ left: 150px;
+ top: 100px;
+  }
