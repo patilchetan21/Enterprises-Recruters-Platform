@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter,Routes,Route, useAsyncError } from 'react-router-dom'
 import { Homepage } from './components/Homepage'
 import Dasboardenterprise from './components/Dasboardenterprise'
 import HireCandidates from './components/Hirecandidates'
@@ -15,11 +15,11 @@ import { useState,useEffect } from 'react';
 import axios from 'axios'
 
 
-const commissions = [
-  { number: 1, company: 'ABC Inc.', hiredNumber: 3, amount: 5000 },
-  { number: 2, company: 'XYZ Ltd.', hiredNumber: 5, amount: 7500 },
-  { number: 3, company: 'PQR LLC', hiredNumber: 2, amount: 3000 },
-];
+// const commissions = [
+//   { number: 1, company: 'ABC Inc.', hiredNumber: 3, amount: 5000 },
+//   { number: 2, company: 'XYZ Ltd.', hiredNumber: 5, amount: 7500 },
+//   { number: 3, company: 'PQR LLC', hiredNumber: 2, amount: 3000 },
+// ];
 const companies = [
   { name: 'ABC Company', hired: 10, amount: 5000 },
   { name: 'XYZ Corporation', hired: 5, amount: 2500 },
@@ -30,6 +30,7 @@ const companies = [
 const App = () => {
   const [resumes, setResumes] = useState([])
   const [candidates, setcandidates] = useState([])
+  const [commissions, setcommission] = useState([])
   // useEffect(async () => {
   //   try{
   //     const resumes = await axios.get("http://127.0.0.1:8000/api/resumeClf/")
@@ -44,9 +45,11 @@ const App = () => {
     try {
       const response = await axios.get("http://127.0.0.1:8000/api/resumeClf/")
       const hiredCan = await axios.get("http://127.0.0.1:8000/api/hiredCanditate/")
+      const commissionRes = await axios.get("http://127.0.0.1:8000/api/commission/")
       // console.log(response.data)
       setResumes(response.data)
       setcandidates(hiredCan.data)
+      setcommission(commissionRes.data)
     } catch(error) {
       console.log(error)
     }

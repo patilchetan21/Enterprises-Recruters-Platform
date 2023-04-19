@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import resData, hiredCanditate
+from .models import resData, hiredCanditate, Commission
 
 class resumeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -10,4 +10,9 @@ class hiredCanditateSerializer(serializers.ModelSerializer):
     class Meta:
         model = hiredCanditate
         fields = ['id', 'name', 'position', 'email', 'contact', 'status', 'agency', 'agency_contact', 'commission']
+
+class CommissionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Commission
+        fields = ['id', 'number', 'company', 'hiredNumber', 'amount']
 

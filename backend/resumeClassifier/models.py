@@ -16,3 +16,9 @@ class hiredCanditate(models.Model):
     commission = models.FloatField(validators=[MinValueValidator(0.0), MaxValueValidator(100.0)])
     agency = models.CharField(max_length=255)
     agency_contact = models.CharField(max_length=75)
+
+class Commission(models.Model):
+    number = models.IntegerField()
+    company = models.CharField(max_length=255)
+    hiredNumber = models.IntegerField()
+    amount = models.FloatField()
