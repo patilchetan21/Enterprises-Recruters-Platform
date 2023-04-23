@@ -24,3 +24,4 @@ class Commission(models.Model):
     amount = models.FloatField()
 
 
+
