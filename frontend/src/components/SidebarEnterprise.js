@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const SidebarEnterprise = ({children}) => {
-    const[isOpen ,setIsOpen] = useState(false);
+    const[isOpen ,setIsOpen] = useState(true);
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
@@ -54,7 +54,6 @@ const SidebarEnterprise = ({children}) => {
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>
-                   <hr className='text-whie' />
                </div>
                {
                    menuItem.map((item, index)=>(
@@ -65,7 +64,7 @@ const SidebarEnterprise = ({children}) => {
                    ))
                }
            </div>
-           <main>{children}</main>
+           <main className='dashboard-routes'>{children}</main>
         </div>
     );
 };
