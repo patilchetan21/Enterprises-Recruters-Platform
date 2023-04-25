@@ -17,6 +17,16 @@ const SidebarEnterprise = ({children}) => {
     const menuItem=[
         {
             path:"/",
+            name:"EnterpriseHome",
+            icon:<FaTh/>
+        },
+        {
+            path:"/",
+            name:"AgencyseHome",
+            icon:<FaTh/>
+        },
+        {
+            path:"/hire-candidate",
             name:"HireCandidate",
             icon:<FaTh/>
         },
