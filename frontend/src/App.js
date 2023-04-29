@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       {/* <EnterpriseDashboard /> */}
       {/* <LandingPage /> */}
-      <SignIn />
+      {/* <SignIn /> */}
       <SignUp />
     </div>
   );
